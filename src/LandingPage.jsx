@@ -5,7 +5,7 @@ import LoginModal from './LoginModal';
 import { useState } from 'react';
 import './LandingPage.css';
 
-const LandingPage = ({ onNavigateToUserDashboard, onNavigateToReviewerDashboard }) => {
+const LandingPage = ({ onNavigateToUserDashboard, onNavigateToReviewerQualification }) => {
   const [isSignupOpen, setIsSignupOpen] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
 
@@ -203,7 +203,7 @@ const LandingPage = ({ onNavigateToUserDashboard, onNavigateToReviewerDashboard 
         onClose={() => setIsSignupOpen(false)}
         onSwitchToLogin={() => setIsLoginOpen(true)}
         onUserRoleSelected={onNavigateToUserDashboard}
-        onReviewerRoleSelected={onNavigateToReviewerDashboard}
+        onReviewerRoleSelected={onNavigateToReviewerQualification}
       />
       
       <LoginModal 
@@ -211,7 +211,7 @@ const LandingPage = ({ onNavigateToUserDashboard, onNavigateToReviewerDashboard 
         onClose={() => setIsLoginOpen(false)}
         onSwitchToSignup={() => setIsSignupOpen(true)}
         onUserRoleSelected={onNavigateToUserDashboard}
-        onReviewerRoleSelected={onNavigateToReviewerDashboard}
+        onReviewerRoleSelected={onNavigateToReviewerQualification}
       />
     </div>
   );

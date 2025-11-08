@@ -1,0 +1,268 @@
+.reviewer-dashboard-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Summary */
+.reviewer-dashboard-summary {
+  margin-bottom: 40px;
+}
+
+.reviewer-dashboard-summary-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 20px;
+  color: #005300;
+  margin: 0;
+  text-align: center;
+}
+
+.reviewer-dashboard-summary-text strong {
+  font-weight: 700;
+}
+
+/* Stats Tiles */
+.reviewer-dashboard-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.reviewer-dashboard-tile:nth-child(3) {
+  grid-column: 1 / -1;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reviewer-dashboard-tile {
+  background: #ffffff;
+  border: 2px solid #005300;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.reviewer-dashboard-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 83, 0, 0.15);
+}
+
+.reviewer-dashboard-tile-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #005300 0%, #007700 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.reviewer-dashboard-tile-content {
+  flex: 1;
+}
+
+.reviewer-dashboard-tile-label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reviewer-dashboard-tile-value {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #005300;
+  margin: 0;
+}
+
+/* Activity Section */
+.reviewer-dashboard-activity {
+  background: #ffffff;
+  border: 2px solid #005300;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.reviewer-dashboard-activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.reviewer-dashboard-activity-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.reviewer-dashboard-activity-days {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  color: #005300;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Heatmap */
+.reviewer-dashboard-heatmap {
+  overflow-x: auto;
+}
+
+.reviewer-dashboard-heatmap-months {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-left: 36px;
+}
+
+.reviewer-dashboard-heatmap-months span {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 11px;
+  color: #666;
+  flex: 1;
+  text-align: left;
+}
+
+.reviewer-dashboard-heatmap-container {
+  display: flex;
+  gap: 8px;
+}
+
+.reviewer-dashboard-heatmap-days {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 8px;
+}
+
+.reviewer-dashboard-heatmap-days span {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 11px;
+  color: #666;
+  height: 10px;
+  line-height: 10px;
+}
+
+.reviewer-dashboard-heatmap-grid {
+  display: flex;
+  gap: 3px;
+  flex: 1;
+}
+
+.reviewer-dashboard-heatmap-week {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.reviewer-dashboard-heatmap-day {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.reviewer-dashboard-heatmap-day:hover {
+  transform: scale(1.5);
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.reviewer-dashboard-heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.reviewer-dashboard-heatmap-legend span {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 11px;
+  color: #666;
+}
+
+.reviewer-dashboard-heatmap-legend-colors {
+  display: flex;
+  gap: 3px;
+}
+
+.reviewer-dashboard-heatmap-legend-colors div {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reviewer-dashboard-tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .reviewer-dashboard-tile:nth-child(3) {
+    grid-column: 1;
+    max-width: 100%;
+  }
+
+  .reviewer-dashboard-tile {
+    padding: 24px;
+  }
+
+  .reviewer-dashboard-tile-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .reviewer-dashboard-tile-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .reviewer-dashboard-tile-value {
+    font-size: 28px;
+  }
+
+  .reviewer-dashboard-activity {
+    padding: 24px;
+  }
+
+  .reviewer-dashboard-activity-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .reviewer-dashboard-heatmap-day {
+    width: 8px;
+    height: 8px;
+  }
+}

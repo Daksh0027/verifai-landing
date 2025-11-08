@@ -1,0 +1,252 @@
+.reviewer-reports-wrapper {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background */
+.reviewer-reports-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Home Button */
+.reviewer-reports-home-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid #005300;
+  background: rgba(255, 255, 255, 0.9);
+  color: #005300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.reviewer-reports-home-btn:hover {
+  background: #005300;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 83, 0, 0.3);
+}
+
+.reviewer-reports-home-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.reviewer-reports-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation */
+.reviewer-reports-nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.reviewer-reports-nav-btn {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #005300;
+  color: #ffffff;
+}
+
+.reviewer-reports-nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 83, 0, 0.3);
+}
+
+.reviewer-reports-nav-btn-primary {
+  background: #00ff00;
+  color: #000000;
+  font-weight: 600;
+}
+
+.reviewer-reports-nav-btn-primary:hover {
+  background: #00dd00;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.4);
+}
+
+/* Filter */
+.reviewer-reports-filter-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.reviewer-reports-filter-btn {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid #005300;
+  background: rgba(255, 255, 255, 0.9);
+  color: #005300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.reviewer-reports-filter-btn:hover {
+  background: #005300;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 83, 0, 0.2);
+}
+
+.reviewer-reports-filter-btn svg {
+  stroke: currentColor;
+}
+
+/* Table */
+.reviewer-reports-table-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.reviewer-reports-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reviewer-reports-table thead {
+  background: #005300;
+  color: #ffffff;
+}
+
+.reviewer-reports-table th {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 18px 20px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reviewer-reports-table th:first-child {
+  width: 50px;
+  text-align: center;
+}
+
+.reviewer-reports-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.reviewer-reports-table tbody tr:hover {
+  background-color: rgba(0, 83, 0, 0.05);
+}
+
+.reviewer-reports-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.reviewer-reports-table td {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 20px;
+  font-size: 15px;
+  color: #333;
+}
+
+.reviewer-reports-table td:first-child {
+  text-align: center;
+}
+
+.reviewer-reports-checkbox {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: #005300;
+}
+
+.reviewer-reports-empty {
+  text-align: center;
+  padding: 80px 20px !important;
+}
+
+.reviewer-reports-empty p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reviewer-reports-wrapper {
+    padding: 40px 20px;
+  }
+
+  .reviewer-reports-nav {
+    flex-direction: column;
+  }
+
+  .reviewer-reports-nav-btn {
+    width: 100%;
+  }
+
+  .reviewer-reports-table-container {
+    overflow-x: auto;
+  }
+
+  .reviewer-reports-table {
+    min-width: 600px;
+  }
+
+  .reviewer-reports-table th,
+  .reviewer-reports-table td {
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+}

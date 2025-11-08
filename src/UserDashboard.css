@@ -19,6 +19,42 @@
   z-index: 0;
 }
 
+/* Home Button */
+.user-dashboard-home-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid #005300;
+  background: rgba(255, 255, 255, 0.9);
+  color: #005300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.user-dashboard-home-btn:hover {
+  background: #005300;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 83, 0, 0.3);
+}
+
+.user-dashboard-home-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
 /* Header */
 .user-dashboard-header {
   display: flex;
@@ -54,7 +90,7 @@
 
 .user-dashboard-greeting {
   font-family: 'Kangge', sans-serif;
-  font-size: 250px;
+  font-size: 120px;
   font-weight: 400;
   margin: 0;
   line-height: 1;

@@ -280,6 +280,92 @@
   background: #cfcfcf;
 }
 
+/* Role Selection Step */
+.signup-role-form {
+  gap: 32px;
+}
+
+.role-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.role-button {
+  background: #ffffff;
+  border: 2px solid #d9d9d9;
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.role-button:hover {
+  border-color: #005300;
+  background: #f9f9f9;
+}
+
+.role-button-active {
+  border-color: #005300;
+  background: #f0f8f0;
+}
+
+.role-button-content h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 8px 0;
+}
+
+.role-button-content p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+
+.signup-form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.signup-back-button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-back-button:hover {
+  background: #cfcfcf;
+  transform: translateX(-4px);
+}
+
+.signup-submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.signup-submit-button:disabled:hover {
+  background: #d9d9d9;
+  transform: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .signup-modal-grid {
